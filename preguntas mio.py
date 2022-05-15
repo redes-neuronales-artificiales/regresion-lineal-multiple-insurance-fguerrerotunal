@@ -22,7 +22,7 @@ y = df["charges"].values
 X = df.copy()
 
 # Remueva la columna `charges` del DataFrame `X`.
-X.drop(["charges"],axis=1)
+X.drop(["charges"],axis=1, inplace=True)
 
 print(X.shape)
 print(y.shape)
